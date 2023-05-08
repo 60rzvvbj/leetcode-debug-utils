@@ -11,3 +11,8 @@ export class TreeNode {
     this.right = right ?? null;
   }
 }
+
+export function createBinaryTree(arr: NodeValue[]): TreeNode | null {
+  // todo
+  return null;
+}
