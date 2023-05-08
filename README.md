@@ -15,6 +15,8 @@ npm install
 npm run test
 ```
 
+[项目目录结构说明](./docs/directory.md)
+
 ### 使用方式
 ```shell
 npm install @ycx60rzvvbj1523/leetcode-debug-utils
