@@ -1,0 +1,29 @@
+{
+  "name": "@ycx60rzvvbj1523/leetcode-debug-utils",
+  "version": "0.0.1",
+  "description": "leetcode-debug-utils",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "pp": "npm publish --access public"
+  },
+  "keywords": [
+    "leetcode",
+    "debug",
+    "utils"
+  ],
+  "author": "@ycx60rzvvbj1523",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {}
+}
