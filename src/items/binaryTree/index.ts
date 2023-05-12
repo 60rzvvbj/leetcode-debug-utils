@@ -12,8 +12,8 @@ export class TreeNode {
   }
 }
 
-export function createBinaryTree(arr: NodeValue[]): TreeNode | null {
-  if (arr == null) return null
+export function createBinaryTree(arr: (NodeValue | null)[]): TreeNode | null {
+  if (arr[0] == null) return null
   let beginPoint = 0
   function ownershift(arr: TreeNode[]) {
     return arr[beginPoint++]
@@ -26,12 +26,22 @@ export function createBinaryTree(arr: NodeValue[]): TreeNode | null {
     let len = queue.length
     while (len--) {
       let node = ownershift(queue)
-      queue.push((node.left = new TreeNode(arr[i++])))
+      let leftnode = arr[i++]
+      if (leftnode != null) {
+        queue.push((node.left = new TreeNode(leftnode)))
+      } else {
+        node.left = null
+      }
+
       if (i == arr.length) return tree
-      queue.push((node.right = new TreeNode(arr[i++])))
+      let rightnode = arr[i++]
+      if (rightnode != null) {
+        queue.push((node.right = new TreeNode(rightnode)))
+      } else {
+        node.right = null
+      }
       if (i == arr.length) return tree
     }
   }
-
   return null
 }
