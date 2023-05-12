@@ -1,3 +1,5 @@
+export * from './cloneTree';
+export * from './printTree';
 import { NodeValue } from '../common';
 
 export class TreeNode {
