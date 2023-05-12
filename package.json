@@ -1,6 +1,6 @@
 {
   "name": "@ycx60rzvvbj1523/leetcode-debug-utils",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "leetcode-debug-utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
